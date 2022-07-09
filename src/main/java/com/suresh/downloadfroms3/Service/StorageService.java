@@ -66,3 +66,39 @@ public class StorageService {
 
 
 }
+/*
+Features of EC2
+1. Scaling (scaled up and scaled down)
+2. Integrated with other services(ex: S3, RDS)
+3. Pay for what you use
+4. Instances can be launched in one or more regions of availability zones.
+5. Support for different OS.
+6. Works with Amazon VPC for secure communication.
+
+Where EC2 is used
+1. To deploy a database
+2. To deploy a Web Application.
+ */
+
+/*
+AWS Lambda :
+Lambda is a serverless compute service that lets you run
+your code without managing servers.
+Lambda scales automatically.
+Lambda allows developers to focus on the core buisness logic they are
+developing instead of worrying about managing servers.
+Example of Lambda :
+1. When we upload a file to S3, it tregars a Lambda function and
+this lambda function store file in the DynamoDB table
+2. Whenever we raise a CR, then it sends notification to everyone
+we tagged or teammates.
+3. when Alexa search something it also uses lambda function to get
+data from database and return it back to the user.
+
+Features
+1. can run so many languages
+2. We can use any local environment to invoke lambda function.
+3. max run time right now is 15 minutes.
+4. Lambda can execute your code in response to events.
+
+ */

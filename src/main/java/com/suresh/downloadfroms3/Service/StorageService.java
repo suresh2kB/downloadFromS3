@@ -1,5 +1,4 @@
 package com.suresh.downloadfroms3.Service;
-
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.amazonaws.services.s3.model.S3Object;
@@ -31,7 +30,7 @@ public class StorageService {
     {
         File fileObj = convertMultiPartFileIntoFile(file);
         String fileName = System.currentTimeMillis()+"_"+file.getOriginalFilename();
-        s3Client.putObject(new PutObjectRequest("bucketName",fileName,fileObj));
+        s3Client.putObject(new PutObjectRequest(bucketName,fileName,fileObj));
         fileObj.delete();
         return "File Uploaded"+fileName;
     }
